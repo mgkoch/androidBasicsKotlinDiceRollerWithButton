@@ -22,12 +22,16 @@ class MainActivity : AppCompatActivity() {
      */
     private fun rollDice() {
         // Creating a new Dice object with 6 sides and roll it
-        val dice = Dice(6)
-        val diceRoll = dice.roll()
+        val dice1 = Dice(6)
+        val dice2 = Dice(6)
+        val diceRoll1 = dice1.roll()
+        val diceRoll2 = dice2.roll()
 
         // Assign the textView's text to the result from the dice roll
-        val resultTextView = findViewById<TextView>(R.id.textView)
-        resultTextView.text = diceRoll.toString()
+        val resultTextView1 = findViewById<TextView>(R.id.textView)
+        val resultTextView2 = findViewById<TextView>(R.id.textView2)
+        resultTextView1.text = diceRoll1.toString()
+        resultTextView2.text = diceRoll2.toString()
     }
 }
 
